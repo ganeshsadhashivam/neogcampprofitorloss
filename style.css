@@ -3,6 +3,9 @@ body{
     text-align: center;
 }
 
+h1{
+    color: #4c1d95;
+}
 .label{
    
     font-size: large;
