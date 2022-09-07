@@ -37,8 +37,8 @@ function calculateProfitOrLoss(initialPrice,quantity,currentPrice){
     if(initialPrice > currentPrice){
         
         var loss = (initialPrice - currentPrice)*quantity;
-
-        var percentageOfLoss = (initialPrice/currentPrice)*100;
+        console.log(loss);
+        var percentageOfLoss = (loss/(initialPrice*quantity))*100;
 
         showMessage(`hey the loss is ${loss} and loss percentage is ${percentageOfLoss}%`);
 
@@ -47,7 +47,7 @@ function calculateProfitOrLoss(initialPrice,quantity,currentPrice){
 
         var gain = (currentPrice - initialPrice)*quantity;
 
-        var percentageOfGain = (gain/initialPrice)*100;
+        var percentageOfGain = (gain/(initialPrice*quantity))*100;
 
         showMessage(`hey the gain is ${gain} and gain percentage is ${percentageOfGain}%`);
 
